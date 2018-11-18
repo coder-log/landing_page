@@ -12,6 +12,12 @@ header {
     position: absolute;
 }
 
+main section {
+    width: 100vw;
+    height: 100vh;
+    background-color:grey;
+
+}
 .nav-container {
     display: flex;
     justify-content: center;
@@ -35,7 +41,9 @@ header {
 
 
 .nav-inner-container ul li {
-    display: inline-block;
+    display: flex; /*was inline-block*/
+    flex-direction: row;
+    align-items: center; 
     padding: 5px;
     color: white;
 }
@@ -53,14 +61,17 @@ header {
     height: 100vh;
     background-image: linear-gradient(to bottom right, #1a2b42, #3D6499,#2ad4ff);
     display:flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .hero div{
     margin: 0 auto;
 }
-
+.hero-caption{
+    text-align: center;
+    font-size: 1.25rem;
+    color: #2ad4ff;
+}
 #hero-caption {
     font-size: 3rem;
     color: white;
@@ -74,7 +85,7 @@ header {
     background: hsla(0,0%,100%,.15);
     left: 10%;
     top: 10%;
-    position: fixed;
+    position: absolute;
 }
 
 .span-75 {
@@ -85,7 +96,7 @@ header {
     background: hsla(0,0%,100%,.15);
     left: 5%;
     top: 25%;
-    position: fixed;
+    position: absolute;
 }
 
 .span-100 {
@@ -96,7 +107,7 @@ header {
     background: hsla(0,0%,100%,.15);
     left: 15%;
     top: 35%;
-    position: fixed;
+    position: absolute;
 }
 
 .span-150 {
@@ -107,7 +118,7 @@ header {
     background: hsla(0,0%,100%,.10);
     left: 5%;
     top: 50%;
-    position: fixed;
+    position: absolute;
 }
 .span-45 {
     width: 45px;
@@ -117,7 +128,7 @@ header {
     background: hsla(0,0%,100%,.30);
     right: 7%;
     top: 45%;
-    position: fixed;
+    position: absolute;
 }
 .span-80 {
     width: 80px;
@@ -127,7 +138,7 @@ header {
     background: hsla(0,0%,100%,.15);
     right:10%;
     top: -5%;
-    position: fixed;
+    position: absolute;
 }
 .span-95 {
     width: 95px;
@@ -137,7 +148,7 @@ header {
     background: hsla(0,0%,100%,.15);
     right: 12%;
     top: 30%;
-    position: fixed;
+    position: absolute;
 }
 
 .span-155 {
@@ -148,7 +159,7 @@ header {
     background: hsla(0,0%,100%,.15);
     right: -5%;
     top: 60%;
-    position: fixed;
+    position: absolute;
 }
 
 .span-40 {
@@ -159,5 +170,36 @@ header {
     background: hsla(0,0%,100%,.15);
     left: 5%;
     top: 80%;
-    position: fixed;
+    position: absolute;
+}
+
+.hero-button {
+    background-color: #1a2b42; 
+    color: white; 
+    font-size: 2rem;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 40px 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color:white;
+    
+}
+
+.features-box {
+    border: solid 1px lightblue;
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 3px 3px 3px lightpink;
 }

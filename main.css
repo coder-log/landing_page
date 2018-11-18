@@ -28,11 +28,23 @@ header {
     align-items: center;
 }
 
+.nav-inner-container ul {
+    display: inline-block;
+    text-align: center;
+}
+
+
 .nav-inner-container ul li {
     display: inline-block;
     padding: 5px;
-    font-size: 1.5rem;
     color: white;
+}
+
+.nav-inner-container ul li i {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    font-size: 2rem;
 }
 
 
@@ -41,6 +53,19 @@ header {
     height: 100vh;
     background-image: linear-gradient(to bottom right, #1a2b42, #3D6499,#2ad4ff);
     display:flex;
+    align-items: center;
+    
+}
+
+.hero div{
+    margin: 0 auto;
+}
+
+#hero-caption {
+    font-size: 3rem;
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: #2ad4ff;
 }
 .span-50 {
     width: 50px;
@@ -58,8 +83,8 @@ header {
     border-radius: 50%;
     background-color:white;
     background: hsla(0,0%,100%,.15);
-    left: 30%;
-    top: 44%;
+    left: 5%;
+    top: 25%;
     position: fixed;
 }
 
@@ -69,8 +94,8 @@ header {
     border-radius: 50%;
     background-color:white;
     background: hsla(0,0%,100%,.15);
-    left: 40%;
-    top: 20%;
+    left: 15%;
+    top: 35%;
     position: fixed;
 }
 
@@ -79,24 +104,24 @@ header {
     height: 150px;
     border-radius: 50%;
     background-color:white;
-    background: hsla(0,0%,100%,.15);
-    left: 10%;
-    top: 44%;
+    background: hsla(0,0%,100%,.10);
+    left: 5%;
+    top: 50%;
     position: fixed;
 }
 .span-45 {
-    width: 150px;
-    height: 150px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color:white;
-    background: hsla(0,0%,100%,.15);
-    right: 33%;
-    top: 75%;
+    background: hsla(0,0%,100%,.30);
+    right: 7%;
+    top: 45%;
     position: fixed;
 }
 .span-80 {
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color:white;
     background: hsla(0,0%,100%,.15);
@@ -105,23 +130,34 @@ header {
     position: fixed;
 }
 .span-95 {
-    width: 150px;
-    height: 150px;
+    width: 95px;
+    height: 95px;
     border-radius: 50%;
     background-color:white;
     background: hsla(0,0%,100%,.15);
-    left: 10%;
-    top: 44%;
+    right: 12%;
+    top: 30%;
     position: fixed;
 }
 
 .span-155 {
-    width: 150px;
-    height: 150px;
+    width: 155px;
+    height: 155px;
     border-radius: 50%;
     background-color:white;
     background: hsla(0,0%,100%,.15);
-    left: 40%;
+    right: -5%;
     top: 60%;
+    position: fixed;
+}
+
+.span-40 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:white;
+    background: hsla(0,0%,100%,.15);
+    left: 5%;
+    top: 80%;
     position: fixed;
 }

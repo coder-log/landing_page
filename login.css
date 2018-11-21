@@ -4,70 +4,24 @@ body{
     font-family: 'Open Sans', sans-serif
 }
 
-header {
-    background-color: transparent;
-    width: 100%;
-    height: auto;
-    top: 0;
-    position: absolute;
-}
-
-main section {
-    width: 100vw;
-    height: 100vh;
-    background-color:grey;
-
-}
-.nav-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-.nav-inner-container{
-    width: 1040px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px;
-    margin: 15px;
-    align-items: center;
-}
-
-.nav-inner-container ul {
-    display: inline-block;
-    text-align: center;
-}
-
-
-.nav-inner-container ul li {
-    display: flex; /*was inline-block*/
-    flex-direction: row;
-    align-items: center; 
-    padding: 5px;
-    color: white;
-}
-
-.nav-inner-container ul li i {
-    display: inline-block;
-    padding: 5px;
-    color: white;
-    font-size: 2rem;
-}
-
-
 .hero {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, #00ffc5, #2ad4ff);
+    background-image: linear-gradient(to bottom right, /*#00ffc5*/ white, #2ad4ff);
     display:flex;
-    align-items: center; 
+    flex-direction:column;
+    align-content:center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
+/*
 .hero div {
     margin: 0 auto;
 
 }
+*/
 .span-50 {
     width: 50px;
     height: 50px;
@@ -161,4 +115,63 @@ main section {
     left: 25%;
     top: 80%;
     position: absolute;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+    margin: 20px;
+    
+}
+.login-container img {
+    margin: 30px;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px white;
+    width:300px;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.login-box button{
+    border: solid 3px white;
+    background-color: #fcbf49/*#FFAA0D*/;
+    color: #1a2b42;
+    font-size: 1.5em;
+    padding: 20px;
+    border-radius: 4px;
+}
+.login-box p {
+    color:#8DA0BA;
+    font-size: 0.90em;
+    text-align:right;
+}
+
+input {
+    height: 3em;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+label {
+    font-size: 1.5em;
+    padding: 10px;
+    color:#494F59
+}
+
+.login-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #f8f8f8;
+    width: 100%;
 }
